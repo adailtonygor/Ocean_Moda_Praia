@@ -2,6 +2,7 @@ import { useContext, useState, useCallback } from "react";
 import "./styles.css";
 import { CarrinhoContext } from "../Context/carrinhoProdutos";
 
+
 function Card({
   name,
   descricao,
@@ -53,8 +54,8 @@ function Card({
             </div>
 
             <div className="teste2">
+            <p className="preco-desconto">{valueBR}</p>
               <p className="preco-original">{precoOriginal}</p>
-              <p className="preco-desconto">{valueBR}</p>
               <p className="desconto">{desconto}</p>
               <p className="parcelamento">{parcelamento}</p>
               <p className="descricao-tamanho">{descricaoTamanho}</p>
